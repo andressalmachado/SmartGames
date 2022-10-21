@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import Banner from "./componentes/Banner/Banner";
+import Card from "./componentes/Card/Card";
+import Menu from "./componentes/Menu/Menu";
+import Minicard from "./componentes/Minicard/Minicard";
+import Footer from "./componentes/Footer/Footer";
+import Separador from "./componentes/Separador/Separador";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Menu />
+      <Banner />
+      <Separador />
+      <ul className="jogos">
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+      </ul>
+      <Separador />
+      <ul>
+        <Minicard />
+        <Minicard />
+        <Minicard />
+        <Minicard />
+        <Minicard />
+      </ul>
+      <Footer />
     </div>
   );
 }
