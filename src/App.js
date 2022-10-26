@@ -1,16 +1,7 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import Detalhes from "./pages/Detalhes";
+import Rotas from "./routes/routes";
 
 function App() {
-  return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/detalhes" element={<Detalhes />} />
-      </Routes>
-    </Router>
-  );
+  return <Rotas />;
 }
 
 export default App;
