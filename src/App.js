@@ -1,21 +1,15 @@
-import Banner from "./componentes/Banner/Banner";
-import Card from "./componentes/Card/Card";
-import Menu from "./componentes/Menu/Menu";
-import Minicard from "./componentes/Minicard/Minicard";
-import Footer from "./componentes/Footer/Footer";
-import Separador from "./componentes/Separador/Separador";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Detalhes from "./pages/Detalhes";
 
 function App() {
   return (
-    <div className="App">
-      <Menu />
-      <Banner />
-      <Separador text="Jogos" />
-      <Card />
-      <Separador text="Quem já comprou e recomenda" />
-      <Minicard />
-      <Footer />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/detalhes" element={<Detalhes />} />
+      </Routes>
+    </Router>
   );
 }
 

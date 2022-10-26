@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import "./Card.css";
 
 const Card = () => {
@@ -8,7 +9,7 @@ const Card = () => {
     fetch("http://localhost:3000/jogos.json")
       .then((response) => response.json())
       .then(setData);
-  });
+  }, []);
 
   return (
     <ul>
@@ -16,10 +17,12 @@ const Card = () => {
         const { name, image, price } = item;
         return (
           <li className="card">
-            <figure>
-              <img src={image} alt={name} />
-              <figcaption>{name}</figcaption>
-            </figure>
+            <Link to={"/detalhes"}>
+              <figure>
+                <img src={image} alt={name} />
+                <figcaption>{name}</figcaption>
+              </figure>
+            </Link>
             <p>R$ {price}</p>
             <button>Comprar</button>
           </li>

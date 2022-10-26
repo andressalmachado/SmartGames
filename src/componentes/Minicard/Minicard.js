@@ -8,7 +8,7 @@ const Minicard = () => {
     fetch("http://localhost:3000/comentarios.json")
       .then((response) => response.json())
       .then(setData);
-  });
+  }, []);
   return (
     <ul className="lista">
       {data.map((item) => {
