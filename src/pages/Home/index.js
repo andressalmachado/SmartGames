@@ -1,8 +1,8 @@
 import Menu from "../../componentes/Menu/Menu";
 import Banner from "../../componentes/Banner/Banner";
 import Card from "../../componentes/Card/Card";
-import Minicard from "../../componentes/Minicard/Minicard";
 import Separador from "../../componentes/Separador/Separador";
+import Minicard from "../../componentes/Minicard/Minicard";
 import Footer from "../../componentes/Footer/Footer";
 
 function Home() {
