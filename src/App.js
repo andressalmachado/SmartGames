@@ -10,22 +10,10 @@ function App() {
     <div className="App">
       <Menu />
       <Banner />
-      <Separador />
-      <ul className="jogos">
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-      </ul>
-      <Separador />
-      <ul>
-        <Minicard />
-        <Minicard />
-        <Minicard />
-        <Minicard />
-        <Minicard />
-      </ul>
+      <Separador text="Jogos" />
+      <Card />
+      <Separador text="Quem já comprou e recomenda" />
+      <Minicard />
       <Footer />
     </div>
   );

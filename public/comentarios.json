@@ -1,0 +1,37 @@
+[
+    {
+        "name": "Julia",
+        "comentario": "Atendimento rápido, fácil comunicação e entrega no prazo.",
+        "image": "https://i.pinimg.com/736x/1b/a7/c8/1ba7c8e10b03d4eb78e3f0ef92538a5d.jpg"
+    },
+    {
+        "name": "Alan",
+        "comentario": "Gostei do atendimento e da agilidade.",
+        "image": "https://pbs.twimg.com/profile_images/944712346500587522/duOz-D8s_400x400.jpg"
+    },
+    {
+        "name": "Caze",
+        "comentario": "Isso aqui é gigante",
+        "image": "https://esporteemidia.com/wp-content/uploads/2022/01/Casimiro-Miguel.webp"
+    },
+    {
+        "name": "Luma",
+        "comentario": "Produto chegou rapido e em perfeito funcionamento.",
+        "image": "https://pbs.twimg.com/profile_images/1581739152416161794/zV9ShS6v_400x400.jpg"
+    },
+    {
+        "name": "Kami",
+        "comentario": "Produto chegou rapido e em perfeito funcionamento.",
+        "image": "https://s2.glbimg.com/iB2CJLcuCAvAmp_2inJnfxbsJo0=/0x0:1080x978/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2020/F/q/TG8WT1RFaltWVYtlMw3w/paingamingbr-83087820-120597719484540-1501182648874233122-n.jpg"
+    },
+    {
+        "name": "Andressa",
+        "comentario": "Produto chegou rapido e em perfeito funcionamento.",
+        "image": "https://avatars.githubusercontent.com/u/31052821?v=4"
+    },
+    {
+        "name": "Cellbit",
+        "comentario": "Produto chegou rapido e em perfeito funcionamento.",
+        "image": "https://yt3.ggpht.com/k2Y-uLTQ16UjB6-ScXpNUc6zokiFu8GULNcN5_N7xqiMi9SrYFBkqpV20FIn9PBfkRy8TAwKeQ=s900-c-k-c0x00ffffff-no-rj"
+    }
+]

@@ -1,9 +1,11 @@
 import "./Separador.css";
 
-const Separador = () => (
-  <fieldset class="separador">
-    <legend>Jogos</legend>
-  </fieldset>
-);
+const Separador = (props) => {
+  return (
+    <fieldset class="separador">
+      <legend>{props.text}</legend>
+    </fieldset>
+  );
+};
 
 export default Separador;
