@@ -1,9 +1,58 @@
-import Mapa from "../Mapa/Mapa";
-import "./Jogo.css";
+import Mapa from "./components/Mapa/Mapa";
+import styled from "styled-components";
+
+const StyledDetalhesJogo = styled.div`
+  padding: 100px 100px 0;
+  text-align: center;
+  background-color: #fdfdfd;
+
+  figure {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 100px;
+
+    img {
+      max-width: 400px;
+    }
+
+    figcaption {
+      font-size: 18px;
+      text-align: justify;
+
+      h1 {
+        text-transform: uppercase;
+        margin-bottom: 30px;
+        /* margin: 0 100px; */
+      }
+      p {
+        line-height: 25px;
+      }
+    }
+  }
+
+  .preco {
+    margin: 0;
+    color: #ff4d00;
+    font-weight: 700;
+  }
+
+  button {
+    margin: 8px 0;
+    width: 180px;
+    padding: 5px 0;
+    background-color: #ffd700;
+    border-color: #ffd700;
+    border-radius: 5px;
+    box-shadow: none;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+  }
+`;
 
 const Jogo = () => {
   return (
-    <div className="jogo">
+    <StyledDetalhesJogo>
       <figure>
         <img
           src="https://m.media-amazon.com/images/I/510tkrW2zfL._AC_.jpg"
@@ -29,7 +78,7 @@ const Jogo = () => {
       <button>Comprar</button>
 
       <Mapa />
-    </div>
+    </StyledDetalhesJogo>
   );
 };
 

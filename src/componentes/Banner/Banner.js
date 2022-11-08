@@ -1,10 +1,19 @@
-import "./Banner.css";
+import styled from "styled-components";
+
+const StyledBanner = styled.header`
+  max-width: 100%;
+
+  img {
+    max-width: 100%;
+    object-fit: cover;
+  }
+`;
 
 const Banner = () => {
   return (
-    <header className="banner">
+    <StyledBanner>
       <img src="/imagens/banner2.jpg" alt="banner" />
-    </header>
+    </StyledBanner>
   );
 };
 
