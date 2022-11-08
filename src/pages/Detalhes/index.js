@@ -1,5 +1,5 @@
 import Menu from "../../componentes/Menu/Menu";
-import Jogo from "../../componentes/Jogo/Jogo";
+import DetalhesJogo from "../../componentes/DetalhesJogo/DetalhesJogo";
 import Separador from "../../componentes/Separador/Separador";
 import Minicard from "../../componentes/Minicard/Minicard";
 import Footer from "../../componentes/Footer/Footer";
@@ -8,7 +8,7 @@ const Detalhes = () => {
   return (
     <>
       <Menu />
-      <Jogo />
+      <DetalhesJogo />
       <Separador text="Quem já comprou e recomenda" />
       <Minicard />
       <Footer />
