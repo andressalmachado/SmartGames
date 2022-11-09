@@ -1,5 +1,6 @@
 import Search from "./components/Search";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const StyledMenu = styled.nav`
   position: fixed;
@@ -25,30 +26,30 @@ const StyledMenu = styled.nav`
   }
 `;
 
-const Menu = () => {
+const Menu = ({ pesquisa, setPesquisa }) => {
   return (
     <StyledMenu>
-      <a href="/">
+      <Link to={"/"}>
         <img src="/imagens/SMART GAMES-2.png" alt="logo" />
-      </a>
+      </Link>
       <ul>
         <li>
-          <a href="/">Jogos</a>
+          <Link to={"/"}>Jogos</Link>
         </li>
         <li>
-          <a href="/">Playstation</a>
+          <Link to={"/"}>Playstation</Link>
         </li>
         <li>
-          <a href="/">XBOX</a>
+          <Link to={"/"}>XBOX</Link>
         </li>
         <li>
-          <a href="/">Nintendo</a>
+          <Link to={"/"}>Nintendo</Link>
         </li>
         <li>
-          <a href="/">Desktop</a>
+          <Link to={"/"}>Desktop</Link>
         </li>
       </ul>
-      <Search />
+      <Search pesquisa={pesquisa} setPesquisa={setPesquisa} />
     </StyledMenu>
   );
 };

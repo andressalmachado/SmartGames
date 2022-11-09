@@ -34,10 +34,19 @@ const StyledSearch = styled.div`
   }
 `;
 
-export default function Search() {
+export default function Search({ pesquisa, setPesquisa }) {
+  const valorDaBusca = pesquisa;
+  const setValorDaBusca = setPesquisa;
+
   return (
     <StyledSearch>
-      <input type="text" />
+      <input
+        type="text"
+        onChange={(e) => {
+          setValorDaBusca(e.target.value);
+          console.log(valorDaBusca);
+        }}
+      />
       <button>🔎</button>
     </StyledSearch>
   );
