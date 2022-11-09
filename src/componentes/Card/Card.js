@@ -10,7 +10,6 @@ const StyledCard = styled.li`
   padding: 15px;
   list-style-type: none;
   text-align: center;
-  display: inline-block;
   box-sizing: border-box;
   border-radius: 5px;
 
@@ -53,7 +52,7 @@ const StyledCard = styled.li`
   }
 `;
 
-const Card = () => {
+const Card = ({ pesquisa }) => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -64,21 +63,28 @@ const Card = () => {
 
   return (
     <ul>
-      {data.map((item) => {
-        const { name, image, price } = item;
-        return (
-          <StyledCard>
-            <Link to={"/detalhes"}>
-              <figure>
-                <img src={image} alt={name} />
-                <figcaption>{name}</figcaption>
-              </figure>
-            </Link>
-            <p>R$ {price}</p>
-            <button>Comprar</button>
-          </StyledCard>
-        );
-      })}
+      {data
+        .filter((item) => {
+          const titleNormalized = item.name.toLowerCase();
+          const pesquisaNormalized = pesquisa.toLowerCase();
+          return titleNormalized.includes(pesquisaNormalized);
+        })
+
+        .map((item) => {
+          const { name, image, price } = item;
+          return (
+            <StyledCard key={name}>
+              <Link to={"/detalhes"}>
+                <figure>
+                  <img src={image} alt={name} />
+                  <figcaption>{name}</figcaption>
+                </figure>
+              </Link>
+              <p>R$ {price}</p>
+              <button>Comprar</button>
+            </StyledCard>
+          );
+        })}
     </ul>
   );
 };

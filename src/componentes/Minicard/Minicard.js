@@ -42,7 +42,7 @@ const Minicard = () => {
       {data.map((item) => {
         const { comentario, image } = item;
         return (
-          <li>
+          <li key={image}>
             <img src={image} alt="Imagem do cliente" />
             <span>{comentario}</span>
           </li>
